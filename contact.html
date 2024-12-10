@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color:rgb(165, 249, 195);  */
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid red; */
+}
+.header img{
+    width: 80px;
+    height: 40px;
+}
+
+.navba a{
+    padding: 40px;
+    text-decoration: none;
+    color:red;
+}
+.navba :hover {
+    color: green;
+}
+.navba i{
+    padding: 10px;
+    padding-top: 10px;
+}
+.contact {
+    /* border: 2px solid red; */
+    /* background-color:rgb(188, 236, 186);  */
+    /* background-image: linear-gradient(rgba(0, 0, 0.5,0.60),rgba(0, 0.5, 0,0.60)),url('AA\ Alfa\-10.jpg'); */
+    min-height: 100vh;
+
+}
+.contact h1 {
+    text-align: center;
+    color: red;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 300%;
+    font-weight: bold;
+}
+.cont {
+ border: 2px solid green;
+ width: 35%;
+ margin-bottom: 3%;
+ margin-left: 100px;
+ padding-bottom: 2%;
+ padding-right: 50px;
+ cursor: pointer;
+}
+
+.cont h3 {
+    padding: 20px 40px 20px ;
+    font-size: 250%;
+    font-weight: bold;
+    color: red;
+
+}
+.cont p {
+    /* padding-left: 60px; */
+    color: green;
+    padding-left: 60px;
+    padding-bottom: 4px;
+    font-size: 150%;
+}
+.phone-icon {
+    display: flex;
+    margin-left: 40px;
+}
+.address {
+    border: 2px solid green;
+    width: 40%;
+    margin-left: 52%;
+    padding-bottom: 2%;
+    margin-bottom: 20px;
+
+}
+.address:hover{
+    background-color: white;
+}
+.address h3 {
+    padding: 20px 40px 20px;
+    font-size: 250%;
+    font-weight: bold;
+}
+.address p {
+    padding-left: 60px;
+    padding-bottom: 35px;
+    font-size: 150%;
+    color: red;
+}
+.feel-free{
+    width: 100%;
+    padding: 3rem 5rem;
+    margin: 50px auto;
+}
+
+.h4{
+    margin-bottom: 1%;
+    font-size: 250%;
+
+}
+.form-container{
+    width: 100%;
+    justify-content: center;
+
+}
+form {
+    margin-left: 20%;
+    width: 60%;
+}
+form .form-group input{
+    width: 40%;
+    padding: 10px 15px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+}
+form .form-group textarea{
+    width: 40%;
+    padding: 10px 15px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+}
+form .form-group{
+    margin: 10px;
+}
+form button{
+    width: 20%;
+    padding: 10px 15px;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+.footer{
+    /* background-color:black ; */
+    /* background-color:rgb(165, 249, 195);  */
+    background-color: green;
+    min-height: 30px;
+
+}
+.footer h1 {
+    color:white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 500%;
+    padding-top: 2%;
+}
+.footer h4 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    padding-bottom: 3%;
+    font-family: cursive;
+}
+.footer h3 {
+    text-align: center;
+    font-size: 200%;
+    padding-top: 30px;
+    color: white;
+}
+.sec-icon {
+    text-align: center;
+    color: white;
+    
+}
+.location {
+    text-align: center;
+    padding-top: 20px;
+    color:white;
+}
+.sec-icon p {
+    text-align: center;
+    color:white;
+}
+.p {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color:white;
+}
+
+
+.icons #menu-icon{
+    display: none;
+    /* position: absolute; */
+}
+#check {
+    display: none;
+}
+.icons #close-icon{
+    display: none;
+}
+
+@media (max-width:1200px){
+    .header{
+        max-height: 20px;
+        border-bottom: 2px solid green;
+    }
+    .form-container{
+    width: 100%;
+    justify-content: center;
+}
+form {
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 10%;
+}
+form .form-group input{
+    width: 60%;
+}
+form .form-group textarea{
+    width: 60%;
+}
+form .form-group{
+    margin: 10px;
+}
+form button{
+    width: 20%;
+    margin-left: 20%;
+}
+
+}
+
+@media (max-width:1024px){
+    .header{
+        max-height: 25px;
+        border-bottom: 2px solid green;
+    }
+    .form-container{
+    width: 100%;
+    justify-content: center;
+}
+form {
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 10%;
+}
+form .form-group input{
+    width: 60%;
+}
+form .form-group textarea{
+    width: 60%;
+}
+form .form-group{
+    margin: 10px;
+}
+form button{
+    width: 20%;
+    margin-left: 20%;
+}
+
+}
+@media (max-width:769px){
+    .header{
+        max-height: 32px;
+        border-bottom: 2px solid green;
+    }
+    .navba a{
+        padding: 15px;
+    }
+    .address {
+    border: 2px solid green;
+    width: 40%;
+
+}
+}
+
+@media (max-width:480px) {
+    .header{
+        max-height: 32px;
+        border-bottom: 2px solid green;
+    }
+    .header img{
+    width: 80px;
+    height: 40px;
+    margin-bottom: -5px;
+}
+.navba{
+            position: absolute;
+            justify-content: center;
+            top: 7%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: white;
+            transition: .3s ease;
+            overflow: hidden;
+            
+                
+            }
+            .navba a{
+                display:block;
+                font-size: 0.7rem;
+                margin: 10px;
+                text-align: center;
+                margin-top: -2%;
+                
+            }
+            .icons #close-icon{
+                display: none;
+            }
+            .icons #menu-icon{
+                display: block; 
+                margin-right: 2rem;           
+            }
+            #memu-icon{
+                margin-left: 1rem;
+            }
+            .icons{
+                display: block;
+               }
+            #check:checked~ .icons #menu-icon{
+                display: none;
+            }
+           
+           #close-icon{
+            display: none;
+            margin-right: 2rem;
+            }
+            #check:checked~.icons #close-icon{
+                display:block;
+            }
+        
+            #check:checked~.navba{
+                background-color:rgb(165, 249, 195) ;
+                height: 17.7rem;
+            }
+        .cont {
+            width: 20%;
+        }
+        .cont {
+ border: 2px solid green;
+ width: 35%;
+ margin-bottom: 3%;
+ margin-left: 30px;
+ padding-bottom: 2%;
+ padding-right: 50px;
+ cursor: pointer;
+}
+
+.cont h3 {
+    padding: 10px 40px 10px ;
+    font-size: 100%;
+    font-weight: bold;
+    color: red;
+
+}
+.cont p {
+    /* padding-left: 60px; */
+    color: green;
+    padding-left: 60px;
+    padding-bottom: 4px;
+    font-size: 50%;
+}
+.phone-icon {
+    display: flex;
+    margin-left: 40px;
+}
+.address {
+    border: 2px solid green;
+    width: 48%;
+    margin-left: 40%;
+    padding-bottom: 2%;
+    margin-bottom: 20px;
+
+}
+
+.address h3 {
+    padding: 10px 40px 10px;
+    font-size: 100%;
+    font-weight: bold;
+}
+.address p {
+    padding-left: 60px;
+    padding-bottom: 25px;
+    font-size: 50%;
+    color: red;
+}
+.contact h1{
+    margin-bottom: 1%;
+    font-size: 1.5rem;
+    padding-left: 20%;
+    text-align: none;
+    margin-right:20%;
+
+}
+.feel-free{
+    width: 100%;
+    padding: 3rem 5rem;
+    margin: 50px auto;
+
+}
+form {
+    width: 60%;
+    /* margin-left: 20%; */
+    /* padding-left: 10%; */
+}
+form .form-group input{
+    width: 60%;
+}
+form .form-group textarea{
+    width: 60%;
+}
+form .form-group{
+    margin: 10px;
+}
+form button{
+    width: 30%;
+    margin-left: 20%;
+}
+
+.footer button {
+    align-content: center;
+    margin-left: 35%;
+    padding: 5px 10px ;
+    color: aqua;
+    
+
+}
+.footer{
+    /* background-color:black ; */
+    background-color:green;
+    min-height: 30px;
+    margin-top: -100px;
+
+}
+.footer h1 {
+    color:white;
+    text-align: center;
+    font-size: 300%;
+
+}
+.footer h4 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+}
+@media (max-width:379px){
+    .header{
+        max-height: 35px;
+        border-bottom: 2px solid green;
+    }
+    .footer{
+    background-color:green;
+    min-height: 30px;
+    margin-top: -50px;
+}
+.footer h1 {
+    color:white;
+    text-align: center;
+    font-size: 300%;
+
+}
+.footer h4 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+}
+
+</style>
+<body>
+ <div class="header">
+        <div class="logo">
+            <img src="LOGO IMG.png" alt="">
+    <!-- <div class="logo" src="logo.jpg.png" frameborder="0"></div> -->
+
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
+          
+        <div class="navba">
+            <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+            <a href="About.html"><i class="fas fa-users"></i>About Us</a>
+            <a href="Gallary.html"><i class="fa-solid fa-image"></i>Gallary</a>
+            <!-- <a href="sub.html"><i class="fas fa-handshake"></i>SUBSIDIARIES</a> -->
+            <a href="contact.html"><i class="fas fa-phone"></i>Contact</a>
+        
+    </div>
+</div>
+    <div class="contact">
+        <h1>FEED BACK</h1>
+        <div class="cont">
+            <h3>CONTACT</h3>
+            <p>Mon-Friday 1:00-7:00</p>
+            <p>Saturday-Sunday 4:00-7:00</p>
+            <p>phone:08033611677</p>
+            <!-- <div class="phone-icon"> -->
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <!-- <p>phone:07032494222</p> -->
+            <!-- </div> -->
+        </div>
+        <div class="address">
+            <h3 style="color: red;">ADDRESS</h3>
+            <P style="color: green;">Estern Bye Pass Ring Road Before Farin Masallaci, Nassarawa LGA, Kano State, Nigeria</P>
+        </div>
+            <h1 style="color: red;">Feel free to write our team anytime we are here for you </h1>
+       
+           <div class="form-container">
+            <form action="form">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" placeholder="message"></textarea>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+           </div>
+    </div><footer class="footer">
+        <h1>A A ALFA </h1>
+        <h4>...Providing total energy</h4>
+        <h3>Contact info</h3>
+        <div class="sec-icon">
+            <i class="fa-solid fa-envelope"></i>
+           <p>aaalfaoil&gasnigltd@yahoo.com</p>
+           </div>            
+           <div class="location">
+               <i class="fa-solid fa-location-dot"></i>
+               <p>Estern bye pass ring road before farin massalaci</p>
+           </div>
+        <!-- <button><a href="index.html">Home Page </a></button> -->
+        <div class="p">
+            <p>©2024 A A ALFA OIL AND GAS ALRIGTH IS RESERVED </p>
+         </div>
+    
+    </footer>
+        
+    
+    
+    
+    
+           
+    
+        
+    
+        
+    </body>
+    </html>

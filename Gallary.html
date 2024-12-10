@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallary</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<style>
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid red; */
+}
+.header img{
+    width: 80px;
+    height: 40px;
+}
+
+.navba a{
+    text-decoration: none;
+    color:red;
+}
+.navba :hover {
+    color: green;
+}
+.navba i{
+    padding: 10px;
+    padding-top: 10px;
+}
+    .head{
+        background-image: linear-gradient(rgba(0, 0, 0.5,0.60),rgba(0, 0.5, 0,0.60)),url('./images/AA\ Alfa\ 23.jpg');
+        width:100%;
+        min-height:75vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        margin-bottom: 50px;
+        /* margin-top: 30px; */
+        color: white;
+        
+    }
+    .head h1 {
+        font-size: 400%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 200px;
+    }
+    .head p {
+        font-size: 150%;
+        font-family: cursive;
+    }
+    .main-container{
+        padding: 1rem 2rem;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        /* margin: 40px auto; */
+        
+
+    }
+    .first-con{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .second-con{
+        display: flex;
+        margin-bottom: 20px;
+        
+    }
+    .third-con{
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+    .forth-con{
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+    .fifty-con{
+        display: flex;
+        margin-bottom: 20px;
+
+
+    }
+    .six-con{
+        display: flex;
+        margin-bottom: 20px;
+        gap: 5px;
+
+    }
+    
+.footer {
+    /* background-color: red; */
+    margin-top: 30px;
+    background-color:rgb(165, 249, 195); 
+    width: 100%;
+}
+.footer h1 {
+    color: red;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 300%;
+    padding-top: 2%;
+}
+.footer h4 {
+    text-align: center;
+    color: red;
+    font-size: 150%;
+    padding-bottom: 3%;
+    font-family: cursive;
+}
+.footer h3 {
+    text-align: center;
+    font-size: 150%;
+    padding-top: 30px;
+    color: red;
+}
+.fist-icon  {
+margin-left: 5%;
+display: flex;
+color: red;
+text-decoration: none;
+}
+.fist-icon a i {
+    padding: 50px;
+    margin-left: 430%;
+}
+.sec-icon {
+    text-align: center;
+    color: red;
+    
+}
+.location {
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+}
+.sec-icon p {
+    text-align: center;
+    color: red;
+}
+.p {
+    text-align: center;
+    padding-top: 5%;
+    color: red;
+    padding-bottom: 5%;
+} 
+    
+
+
+
+    .icons #menu-icon{
+    display: none;
+    /* position: absolute; */
+}
+#check {
+    display: none;
+}
+.icons #close-icon{
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+        .head{
+            width: 100%;
+            min-height: 60vh;
+        }
+        .marquee h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+        }
+        .head h1 {
+        font-size: 350%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 3%;
+    }
+    .head p {
+        font-size: 150%;
+        font-family: cursive;
+    }
+    .main-container{
+        width: 94%;
+        justify-content: center;
+        display: grid;
+        }
+        .first-con{
+            display:flex;
+            width: 84%;
+            justify-content: center;  
+        }
+        .first-con img{
+        width: 25%;
+        }
+        .first-con video{
+        width: 25%;
+        }
+        .second-con{
+        display:flex;
+        width: 84%;
+        justify-content: center;
+    }
+    .second-con img{
+         width: 25%;   
+    }
+    .second-con video{
+        width: 25%;
+    }
+    .third-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .third-con img{
+            width: 25%;
+    }
+    .third-con video{
+        width:25%;
+    }
+        .forth-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .forth-con img{
+            width:25%;
+    }
+    .forth-con video{
+        width: 25;
+    }
+        .fifth-con{
+            display:flex;
+            width: 84%;
+            justify-content: center;
+        }
+        .fifth-con img{
+            width:25%;
+    }
+    .fifth-con video{
+        width:25%;
+    }
+        .six-con{
+            margin-top: 2%;
+            display:flex;
+            justify-content: center;
+            width:84%;
+        }
+        .six-con img{
+            width:25%;
+    }
+        .seven-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .seven-con video{
+            width:35%;
+    }
+    .footer{
+        justify-content: center;
+    }
+        .footer button {
+    justify-content: center;
+    margin-left: 40%;
+    padding: 5px 10px ;
+     color: aqua;
+}
+}
+
+    @media (max-width:1024px) {
+        .head{
+            width: 100%;
+            min-height: 40vh;
+        }
+        .marquee h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+        }
+        .head h1 {
+        font-size: 230%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 3%;
+    }
+    .head p {
+        font-size: 90%;
+        font-family: cursive;
+    }
+    .main-container{
+        width: 93.5%;
+        justify-content: center;
+        display: grid;
+        }
+        .first-con{
+            display:flex;
+            width: 84%;
+            justify-content: center;  
+        }
+        .first-con img{
+        width: 25%;
+        }
+        .first-con video{
+        width: 25%;
+        }
+        .second-con{
+        display:flex;
+        width: 84%;
+        justify-content: center;
+    }
+    .second-con img{
+         width: 25%;   
+    }
+    .second-con video{
+        width: 25%;
+    }
+    .third-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .third-con img{
+            width: 25%;
+    }
+    .third-con video{
+        width:25%;
+    }
+        .forth-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .forth-con img{
+            width:25%;
+    }
+    .forth-con video{
+        width: 25;
+    }
+        .fifth-con{
+            display:flex;
+            width: 84%;
+            justify-content: center;
+        }
+        .fifth-con img{
+            width:25%;
+    }
+    .fifth-con video{
+        width:25%;
+    }
+        .six-con{
+            margin-top: 3%;
+            display:flex;
+            justify-content: center;
+            width:84%;
+        }
+        .six-con img{
+            width:25%;
+    }
+        .seven-con{
+            display:flex;
+            width:84%;
+            justify-content: center;
+        }
+        .seven-con video{
+            width:35%;
+    }
+        .footer button {
+    justify-content: center;
+    margin-left: 40%;
+    padding: 5px 10px ;
+     color: aqua;
+}
+    }
+    @media (max-width:769px){
+        .header{
+            margin-bottom: -2%;
+        }
+        .head{
+            width: 100%;
+            max-height: 30vh;
+          
+        }
+        .marquee h2 {
+            margin-top: 7%;
+            font-size: 2rem;
+        }
+        .head h1 {
+        font-size: 230%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 3%;
+    }
+    .head p {
+        font-size: 90%;
+        font-family: cursive;
+    }
+    .main-container{
+        margin-top: -6%;
+        width: 91%;
+        justify-content: center;
+        display: grid;
+        }
+        .first-con{
+            display:flex;
+            width: 100%;
+            justify-content: center;  
+        }
+        .first-con img{
+        width: 25%;
+        }
+        .first-con video{
+        width: 25%;
+        }
+        .second-con{
+        display:flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .second-con img{
+         width: 25%;   
+    }
+    .second-con video{
+        width: 25%;
+    }
+    .third-con{
+            display:flex;
+            width:100%;
+            justify-content: center;
+        }
+        .third-con img{
+            width: 25%;
+    }
+    .third-con video{
+        width:25%;
+    }
+        .forth-con{
+            display:flex;
+            width:100%;
+            justify-content: center;
+        }
+        .forth-con img{
+            width:25%;
+    }
+    .forth-con video{
+        width: 25;
+    }
+        .fifth-con{
+            display:flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .fifth-con img{
+            width:25%;
+    }
+    .fifth-con video{
+        width:25%;
+    }
+        .six-con{
+            margin-top: 3%;
+            display:flex;
+            justify-content: center;
+            width:100%;
+        }
+        .six-con img{
+            width:25%;
+    }
+        .seven-con{
+            display:flex;
+            width:100%;
+            justify-content: center;
+        }
+        .seven-con video{
+            width:35%;
+    }
+        .footer button {
+    justify-content: center;
+    margin-left: 40%;
+    padding: 5px 10px ;
+     color: aqua;
+}
+    }
+
+    
+    
+    @media (max-width:480px){
+        .navba{
+            position: absolute;
+            top: 6%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: white;
+            transition: .3s ease;
+            overflow: hidden;
+            
+                
+            }
+            .navba a{
+                display:block;
+                font-size: 0.7rem;
+                margin: 10px;
+                text-align: center;
+                margin-top: -2%;
+                
+            }
+       
+            .icons #menu-icon{
+                display: block; 
+                margin-top: 1rem;
+                margin-right: 2rem;           
+            }
+            #memu-icon{
+                margin-left: 1rem;
+            }
+            .icons{
+                display: block;
+               }
+            #check:checked~ .icons #menu-icon{
+                display: none;
+            }
+           
+           #close-icon{
+            display: none;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            }
+            #check:checked~.icons #close-icon{
+                display:block;
+            }
+        
+            #check:checked~.navba{
+                height: 17.7rem;
+                background-color:rgb(165, 249, 195);
+            }
+        .head{
+            width: 100%;
+            min-height: 40vh;
+        }
+        .marquee h2 {
+            margin-top: 10%;
+            font-size: 2rem;
+        }
+        .head h1 {
+        font-size: 230%;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 3%;
+    }
+    .head p {
+        font-size: 90%;
+        font-family: cursive;
+    }
+    .main-container{
+        margin-top: -10%;
+        width: 86.5%;
+        justify-content: center;
+        display:block;
+        }
+        .first-con{
+            display:block;
+            width: 100%;
+            justify-content: center;  
+        }
+        .first-con img{
+         padding-top:2% ;
+        width: 100%;
+        }
+        .first-con video{
+        padding-top:2% ;
+        width: 100%;
+        }
+        .second-con{
+        margin-top: -4%;
+        display:block;
+        width: 100%;
+        justify-content: center;
+    }
+    .second-con img{
+        padding-top:2% ;
+         width: 100%;   
+    }
+    .second-con video{
+        padding-top:2% ;
+        width: 100%;
+    }
+    .third-con{
+            margin-top: -4%;
+            display:block;
+            width:100%;
+            justify-content: center;
+        }
+        .third-con img{
+            padding-top:2% ;
+            width: 100%;
+    }
+    .third-con video{
+        padding-top:2% ;
+        width:100%;
+    }
+        .forth-con{
+            margin-top: -4%;
+            display:block;
+            width:100%;
+            justify-content: center;
+        }
+        .forth-con img{
+            padding-top:2% ;
+            width:100%;
+    }
+    .forth-con video{
+        padding-top:2% ;
+        width:100%;
+    }
+        .fifth-con{
+            margin-top: -4%;
+            display:block;
+            width: 100%;
+            justify-content: center;
+        }
+        .fifth-con img{
+            padding-top:2% ;
+            width:100%;
+    }
+    .fifth-con video{
+        padding-top:2% ;
+        width:100%;
+    }
+        .six-con{
+            margin-top: -4%;
+            display:block;
+            justify-content: center;
+            width:100%;
+        }
+        .six-con img{
+            padding-top:2% ;
+            width:100%;
+    }
+        .seven-con{
+            margin-top: -4%;
+            display:block;
+            width:100%;
+            justify-content: center;
+            margin-bottom: -3%;
+        }
+        .seven-con video{
+            padding-top:2% ;
+            width:100%;
+    }
+    .footer {
+        margin-top: 15px;
+    }
+        .footer button {
+    justify-content: center;
+    margin-left: 40%;
+    padding: 5px 10px ;
+     color: aqua;
+}
+    }
+    @media (max-width:379px){
+ 
+        .main-container{
+        margin-top: -12%;
+        width: 82.5%;
+        justify-content: center;
+        display:block;
+        }
+        .six-con{
+            margin-top: 1%;
+        }
+        .seven-con video{
+            padding-top:-2% ;
+        }
+    }
+    
+</style>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="LOGO IMG.png" alt="">
+    <!-- <div class="logo" src="logo.jpg.png" frameborder="0"></div> -->
+
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
+          
+        <div class="navba">
+            <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+            <a href="About.html"><i class="fas fa-users"></i>About Us</a>
+            <a href="Gallary.html"><i class="fa-solid fa-image"></i>Gallary</a>
+            <!-- <a href="sub.html"><i class="fas fa-handshake"></i>SUBSIDIARIES</a> -->
+            <a href="contact.html"><i class="fas fa-phone"></i>Contact</a>
+        
+    </div>
+</div>
+
+
+<div class="head">
+    <marquee behavior="Top" direction="right" class="marquee">
+        <h2 style="color: green;">I Fuel @ A A ALFA OIL & GAS NIG LTD</h2></marquee>
+        <h1>GALLARY</h1>
+ <p>Alfa In Pictures And Videos</p>
+</div>
+<section>
+        <div class="main-container">
+            <div class="first-con">
+                <img src="./images/AA Alfa img 1.jpg" alt="image" width="280px" height="150px">
+                <video src="./images/AA Alfa vid 9.mp4" controls autoplay loop muted width="300px" height="150px" ></video>
+                <img src="./images/AA Alfa img 5.jpg" alt="image" width="290px" height="150px">
+                <video src="./images/AA Alfa vid 6.mp4" controls  autoplay loop muted width="300px" height="150px" ></video>
+            </div>
+            <div class="second-con">
+                <img src="./images/AA Alfa 23.jpg" alt="image" width="280px" height="150px">
+                <video src="./images/AA Alfa vid 10.mp4"controls  autoplay loop muted  width="300px" height="150px"></video>
+                <img src="./images/AA Alfa 22.jpg" alt="image" width="290px" height="150px">
+                <video src="./images/AA Alfa vid 11.mp4"controls  autoplay loop muted  width="300px" height="150px"></video>
+            </div>
+            <div class="third-con">
+                <img src="./images/AA Alfa 6 img.jpg" alt="image" width="300px" height="150px">
+                <video src="./images/AA Alfa vid 12.mp4"controls  autoplay loop muted  width="300px" height="150px"></video>
+                <img src="./images/AA Alfa 10.jpg" alt="image" width="285x" height="150px">
+                <video src="./images/AA Alfa vid 8.mp4"controls  autoplay loop muted  width="300px" height="150px"></video>
+            </div>
+            <div class="forth-con">
+                <img src="./images/AA Alfa 18.jpg" alt="image" width="300px" height="150px">
+                <video src="./images/AA Alfa vid 5.mp4 "controls  autoplay loop muted  width="300px" height="150px"></video>
+                <img src="./images/AA Alfa 19.jpg" alt="image" width="285px" height="150px">
+                <video src="./images/AA Alfa vid 16.mp4"controls  autoplay loop muted  width="300px" height="150px"></video>
+            </div>
+            <div class="fifth-con">
+                <img src="./images/AA Alfa 13.jpg" alt="image" width="250px" height="150px">
+                <img src="./images/AA Alfa 24.jpg" alt="image" width="300px" height="150px">
+                <img src="./images/AA Alfa 15.jpg" alt="image" width="250px" height="150px">
+                <img src="./images/AA Alfa 16.jpg" alt="image" width="292px" height="150px">
+            </div>
+            <div class="six-con">
+                <img src="./images/AA Alfa 11.jpg" alt="image" width="250px" height="150px">
+                <img src="./images/AA Alfa img 5.jpg" alt="image" width="280px" height="150px">
+                <img src="./images/AA Alfa 21.jpg" alt="image" width="275px" height="150px">
+                <img src="./images/AA ALfa -12.jpg" alt="image" width="295px" height="150px">
+            </div>
+            <div class="seven-con">
+                <video src="./images/AA Alfa vid 15.mp4"controls  autoplay loop muted  width="300px" height="200px"></video>
+                <video src="./images/AA Alfa vid 4.mp4"controls  autoplay loop muted  width="300px" height="200px"></video>
+                <video src="./images/AA Alfa vid 14.mp4"controls  autoplay loop muted  width="300px" height="200px"></video>
+            </div>
+   </div>
+</section>
+<footer class="footer">
+    <h1>A A ALFA </h1>
+    <h4>...Providing total energy</h4>
+    <h3>Contact info</h3>
+    <div class="sec-icon">
+        <i class="fa-solid fa-envelope"></i>
+       <p>aaalfaoil&gasnigltd@yahoo.com</p>
+       </div>            
+       <div class="location">
+           <i class="fa-solid fa-location-dot"></i>
+           <p>Estern bye pass ring road before farin massalaci</p>
+       </div>
+    <!-- <button><a href="index.html">Home Page </a></button> -->
+    <div class="p">
+        <p>©2024 A A ALFA OIL AND GAS ALRIGTH IS RESERVED </p>
+     </div>
+
+</footer>
+    
+</body>
+</html>

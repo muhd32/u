@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>About Us</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid red; */
+}
+.header img{
+    width: 80px;
+    height: 40px;
+}
+
+.navba a{
+    padding: 20px;
+    text-decoration: none;
+    color:red;
+}
+.navba :hover {
+    color: green;
+}
+.navba i{
+    padding: 10px;
+    padding-top: 10px;
+}
+.About-Us {
+    background-image: linear-gradient(rgba(0, 0, 0.5,0.60),rgba(0, 0.5, 0,0.60)),url('./images/AA\ Alfa\ img\ 2.jpg');
+    width:100%;
+    min-height:75vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: -15px;
+    border-bottom: 6px solid;
+    border-color:green;
+} 
+.About-Us h1{
+    color:red;
+    font-size: 400%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 13%;
+    
+}
+.About-Us p{
+    color:green;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  
+}
+.leader h1{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin-left:10px;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center ;
+    color: red;
+}
+.leader p{
+    text-align: center ;
+    color: green;
+}
+.leader img {
+    /* padding-left: 70px; */
+    padding-top: 40px;
+    width: 100%;
+    height: 550px;
+
+}
+.leader{
+    /* background-color: blue; */
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    /* padding: 3rem 2rem; */
+    margin-top: 40px;
+    background-color:rgb(165, 249, 195); 
+    border-radius: 10px;
+    display: flex;
+}
+.vission{
+    width: 25%;
+    /* padding: 3rem 2rem; */
+    margin: 50px auto;
+    background:transparent;
+    border: 1px solid green;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 4s;
+
+    /* display: flex; */
+    /* justify-content:space-around; */
+
+}
+.vission:hover{
+    color: white;
+    background-color:white;
+    box-shadow: 0px 5px 10px 5px red;
+    transform: scale(1.1);
+
+}
+.mission{
+    width: 25%;
+    /* padding: 3rem 2rem; */
+    margin: 50px auto;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid green;
+    text-align: center;
+    transition: 4s;
+    /* display: flex; */
+    /* justify-content:space-around; */
+
+}
+.mission:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color:white;
+    box-shadow: 0px 5px 10px 5px red;
+
+}
+.vission h2 {
+    padding-bottom: 3%;
+    color:red;
+
+}
+.vission h6{
+    color: green;
+    font-size: 100%;
+}
+.mission h2 {
+    padding-bottom: 3%;
+    color: red;
+}
+.mission h6 {
+    color: green;
+    font-size: 100%;
+
+}
+
+.footer {
+    /* background-color: red; */
+    margin-top: 30px;
+    /* background-color:rgb(165, 249, 195);  */
+    background-color: black;
+    width: 100%;
+}
+.footer h1 {
+    color:white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 500%;
+    padding-top: 2%;
+}
+.footer h4 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    padding-bottom: 3%;
+    font-family: cursive;
+}
+.footer h3 {
+    text-align: center;
+    font-size: 200%;
+    padding-top: 30px;
+    color: white;
+}
+.fist-icon  {
+margin-left: 5%;
+display: flex;
+color: white;
+text-decoration: none;
+}
+.fist-icon a i {
+    padding: 50px;
+    margin-left: 430%;
+}
+.sec-icon {
+    text-align: center;
+    color: white;
+    
+}
+.location {
+    text-align: center;
+    padding-top: 20px;
+    color:white;
+}
+.sec-icon p {
+    text-align: center;
+    color:white;
+}
+.p {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color:white;
+}
+
+.icons #menu-icon{
+    display: none;
+    /* position: absolute; */
+}
+#check {
+    display: none;
+}
+.icons #close-icon{
+    display: none;
+}
+
+
+@media (max-width:1200px) {
+    .header{
+        padding-right: 5px;
+
+    }
+   .navba a {
+    padding: 10px;
+   }
+   .About-Us {
+    width:100%;
+    min-height:50vh;
+
+} 
+.marquee h2 {
+            margin-top: 20px;
+            font-size: 4rem;
+        }
+.About-Us h1{
+    color:red;
+    font-size: 350%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.About-Us p{
+    color:green;
+    font-size: 150%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  
+}
+    
+.leader img {
+    margin-bottom: -12%;
+    width: 100%;
+    height: 450px;
+
+}
+.container{
+    margin-top: 7%;
+    width: 80%;
+    display: flex;
+    border-radius: 0%;
+}
+.vission{
+    width:40%;
+    margin-bottom: -2%;
+    min-height: 10vh;
+    padding-bottom: 5%;
+    padding-top: 3%;
+   
+}
+.mission{
+    width:40%;
+    margin-bottom: -2%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    min-height: 10vh;
+
+}
+.footer{
+    background-color:black ;
+    margin-top: -0.1%;
+    min-height: 20px;
+    width: 100%;
+    margin-bottom: -50%;
+
+}
+.sec-icon {
+    text-align: center;
+    color:white;
+    
+}
+.location {
+    text-align: center;
+    color: white;
+}
+.sec-icon p {
+    text-align: center;
+    color:white;
+}
+}
+
+@media (max-width:1024px) {
+    .header{
+        padding-right: 5px;
+
+    }
+   .navba a {
+    padding: 10px;
+   }
+   .About-Us {
+    width:100%;
+    min-height:40vh;
+
+} 
+.marquee h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+        }
+.About-Us h1{
+    color:red;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.About-Us p{
+    color:green;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  
+}
+    
+.leader img {
+    margin-bottom: -12%;
+    width: 100%;
+    height: 300px;
+
+}
+.container{
+    width: 80%;
+    display: flex;
+    border-radius: 0%;
+}
+.vission{
+    width:40%;
+    margin-bottom: -2%;
+    min-height: 10vh;
+    padding-bottom: 5%;
+    padding-top: 3%;
+   
+}
+.mission{
+    width:40%;
+    margin-bottom: -2%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    min-height: 10vh;
+
+}
+.footer{
+    background-color:black ;
+    margin-top: -0.1%;
+    min-height: 30px;
+    width: 100%;
+    margin-bottom: -50%;
+
+}
+}
+@media (max-width:769px) {
+
+.marquee h2 {
+            margin-top: 15%;
+            font-size: 1rem;
+        }
+.About-Us h1{
+    color:red;
+    font-size: 180%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+.About-Us p{
+    color:green;
+    font-size: 80%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  
+}
+.leader h1{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    /* margin-left:10px; */
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center ;
+    color: red;
+}
+.leader p{
+    text-align: center ;
+    font-size: 65%;
+    color: green;
+}
+.leader{
+    width: 100%;
+}
+    
+.leader img {
+    margin-bottom: 1%;
+    width: 100%;
+    height: 300px;
+
+}
+.container{
+    width: 80%;
+    display: flex;
+    border-radius: 0%;
+    /* min-height: 65vh; */
+}
+.vission{
+    width:40%;
+    margin-bottom: 5%;
+    /* margin-left: 6%; */
+    /* min-height: 5vh; */
+    /* padding-bottom: 5%; */
+    padding-top: 3%;
+}
+.mission{
+    width:40%;
+    margin-bottom: 5%;
+    /* padding-bottom: 5%; */
+    padding-top: 3%;
+    /* margin-left: 6%; */
+    /* min-height: 10vh; */
+}
+.footer{
+    background-color:black ;
+    min-height: 30px;
+    width: 100%;
+}
+}
+@media (max-width:480px) {
+    .header img{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 8%;
+}
+    .navba{
+            position: absolute;
+            top: 6%;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: white;
+            transition: .3s ease;
+            overflow: hidden;
+            
+                
+            }
+            .navba a{
+                display:block;
+                font-size: 0.7rem;
+                margin: 10px;
+                text-align: center;
+                margin-top: -2%;
+                
+            }
+            .icons #menu-icon{
+                display: block; 
+                margin-top: 1rem;
+                margin-right: 2rem;           
+            }
+            #memu-icon{
+                margin-left: 1rem;
+            }
+            .icons{
+                display: block;
+               }
+            #check:checked~ .icons #menu-icon{
+                display: none;
+            }
+           
+           #close-icon{
+            display: none;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            }
+            #check:checked~.icons #close-icon{
+                display:block;
+            }
+        
+            #check:checked~.navba{
+                height: 17.7rem;
+                background-color:white;
+            }
+    .marquee h2 {
+            margin-top: 10%;
+            font-size: 1rem;
+        }
+.About-Us h1{
+    color:red;
+    font-size: 180%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 15%;
+    
+}
+.About-Us p{
+    color:green;
+    font-size: 80%;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;  
+}
+.leader h1{
+    padding-top: 3%;
+    padding-bottom: 2%;
+    /* margin-left:10px; */
+    font-size: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center ;
+    color: red;
+}
+.leader p{
+    text-align: center ;
+    font-size: 65%;
+    color: green;
+}
+.leader{
+    width: 100%;
+}
+    
+.leader img {
+    width: 100%;
+    height: 300px;
+
+}
+.container{
+    width: 80%;
+    display: block;
+    justify-content: center;
+    border-radius: 0%;
+    min-height: 60vh;
+}
+.vission{
+    width:70%;
+    min-height: 10vh;
+    padding-bottom: 5%;
+    padding-top: 3%;
+   
+}
+.mission{
+    width:70%;
+    margin-bottom: 2%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    min-height: 10vh;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color:black;
+    width: 100%;
+}
+.footer h1 {
+    color:white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    font-size: 300%;
+    padding-top: 2%;
+}
+.footer h4 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    padding-bottom: 3%;
+    font-family: cursive;
+}
+.footer h3 {
+    text-align: center;
+    font-size: 150%;
+    padding-top: 30px;
+    color: white;
+}
+.p {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color:white;
+}
+.footer button{
+    align-content: center;
+    margin-left: 40%;
+    padding: 5px 10px ;
+}
+}
+@media (max-width:379px){
+    .header img{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 8%;
+}
+}
+
+.icons {
+        display: block;
+        }
+</style>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="LOGO IMG.png" alt="">
+    <!-- <div class="logo" src="logo.jpg.png" frameborder="0"></div> -->
+
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-xmark" id="close-icon"></i>
+        </label>
+          
+        <div class="navba">
+            <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+            <a href="About.html"><i class="fas fa-users"></i>About Us</a>
+            <a href="Gallary.html"><i class="fa-solid fa-image"></i>Gallary</a>
+            <!-- <a href="sub.html"><i class="fas fa-handshake"></i>SUBSIDIARIES</a> -->
+            <a href="contact.html"><i class="fas fa-phone"></i>Contact</a>
+        
+    </div>
+</div>
+   
+    <section class="About-Us">
+        <marquee behavior="Top" direction="right" class="marquee">
+            <h2 style="color: green;">I Fuel @ A A ALFA OIL & GAS NIG LTD</h2></marquee>
+        <h1> ABOUT A A ALFA  </h1>
+        <P>Our core business is the wholesale and retail <br> of PMS, DPK, AGO and LPG </P>
+       
+    </section>
+    <section class="leader">
+        <h1>A Leader in the Nigeria Oil and Gas Sector.</h1>
+        <p>A. A ALFA is a Nigerian Indigenous Oil and Gas Company that Commenced the business of Marketing and distribution of Petroleum Products in 1990, <br> with its headquarter in Kano, Nigeria. The Company was fully incorporated as A. A ALFA NIGERIA LTD in Nigeria in the year 2008.</p>
+    
+        <img src="./images/AA Alfa 23.jpg" alt="image">
+    <div class="container">
+        <!-- <div class="our-con"> -->
+    <div class="vission">
+        <h2>Our Vission</h2>
+        <h6>To be the leading fuel station chain, recognized for our exceptional customer experience, innovative solutions, and sustainable practices, making us the preferred choice for fueling and convenience needs, while driving positive change in the communities we serve."
+        </h6>
+    </div>
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <h6>To provide convenient, reliable, and high-quality fueling services, while prioritizing customer safety, satisfaction, and environmental responsibility, and contributing to the well-being of our community." </h6>
+    </div>
+</div>
+</div>
+</section>
+<footer class="footer">
+    <h1>A A ALFA </h1>
+    <h4>...Providing total energy</h4>
+    <h3>Contact info</h3>
+    <div class="sec-icon">
+        <i class="fa-solid fa-envelope"></i>
+       <p>aaalfaoil&gasnigltd@yahoo.com</p>
+       </div>            
+       <div class="location">
+           <i class="fa-solid fa-location-dot"></i>
+           <p>Estern bye pass ring road before farin massalaci</p>
+       </div>
+    <!-- <button><a href="index.html">Home Page </a></button> -->
+    <div class="p">
+        <p>©2024 A A ALFA OIL AND GAS ALRIGTH IS RESERVED </p>
+     </div>
+
+</footer>
+    
+</body>
+</html>
